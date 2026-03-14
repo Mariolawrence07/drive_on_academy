@@ -2,7 +2,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, X, Car } from "lucide-react"
+import { Menu, Car } from "lucide-react"
 import { Link } from "react-router-dom"
 
 const navLinks = [
