@@ -58,13 +58,13 @@ const stats = [
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col bg-background text-foreground">
+    <div className="flex flex-col bg-background text-foreground ">
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.18),transparent_35%),radial-gradient(circle_at_top_right,rgba(16,185,129,0.14),transparent_30%),linear-gradient(to_bottom,rgba(148,163,184,0.08),transparent_40%)]" />
         <div className="absolute inset-x-0 top-0 -z-10 h-px bg-border/60" />
 
-        <div className="mx-auto max-w-[1440px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/80 px-4 py-2 text-sm shadow-sm backdrop-blur">
@@ -166,7 +166,7 @@ export default function HomePage() {
 
       {/* Features */}
       <section className="py-20 sm:py-24">
-        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <div className="inline-flex rounded-full border border-border/60 bg-muted/40 px-4 py-2 text-sm text-muted-foreground">
               Why learners choose us
@@ -205,7 +205,7 @@ export default function HomePage() {
 
       {/* CTA */}
       <section className="py-8 sm:py-12">
-        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden rounded-[32px] border border-border/60 bg-gradient-to-br from-primary to-primary/85 px-6 py-10 shadow-[0_24px_80px_-32px_rgba(0,0,0,0.45)] sm:px-10 sm:py-14 lg:px-14">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.18),transparent_25%)]" />
 
@@ -261,7 +261,7 @@ export default function HomePage() {
 
       {/* Testimonials */}
       <section className="py-20 sm:py-24">
-        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <div className="inline-flex rounded-full border border-border/60 bg-muted/40 px-4 py-2 text-sm text-muted-foreground">
               Real learner feedback
@@ -317,7 +317,7 @@ export default function HomePage() {
 
       {/* Trust indicators */}
       <section className="border-t border-border/60 bg-muted/20 py-10">
-        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-4 md:grid-cols-3">
             {[
               "Fully Licensed & Insured",

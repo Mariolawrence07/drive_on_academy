@@ -69,7 +69,7 @@ export default function ContactPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.16),transparent_30%),radial-gradient(circle_at_top_right,rgba(16,185,129,0.10),transparent_25%),linear-gradient(to_bottom,rgba(148,163,184,0.08),transparent_45%)]" />
 
-        <div className="mx-auto max-w-[1440px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <div className="mx-auto max-w-3xl text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/80 px-4 py-2 text-sm text-muted-foreground shadow-sm backdrop-blur">
               <Sparkles className="h-4 w-4 text-primary" />
@@ -115,7 +115,7 @@ export default function ContactPage() {
 
       {/* Contact Methods */}
       <section className="py-20 sm:py-24">
-        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 md:grid-cols-3">
             {contactMethods.map((method) => (
               <Card
@@ -155,7 +155,7 @@ export default function ContactPage() {
 
       {/* Service Area & Hours */}
       <section className="bg-muted/20 py-20 sm:py-24">
-        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 lg:grid-cols-2">
             {/* Service Area */}
             <Card className="rounded-3xl border-border/60 bg-card/80 shadow-sm">
@@ -243,7 +243,7 @@ export default function ContactPage() {
 
       {/* Trust Strip */}
       <section className="border-t border-border/60 bg-background py-10">
-        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-4 md:grid-cols-3">
             {[
               "Friendly, patient instruction",
@@ -264,7 +264,7 @@ export default function ContactPage() {
 
       {/* CTA */}
       <section className="py-10 sm:py-14">
-        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden rounded-[32px] border border-border/60 bg-gradient-to-br from-primary to-primary/85 px-6 py-12 shadow-[0_24px_80px_-32px_rgba(0,0,0,0.45)] sm:px-10 lg:px-14">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.16),transparent_25%)]" />
 
