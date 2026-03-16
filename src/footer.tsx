@@ -45,11 +45,11 @@ export function Footer() {
             <div className="flex flex-col gap-3 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>07413501595</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                <span>hello@drivepro.com</span>
+                <span>Driveonacademy@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
@@ -79,7 +79,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} DrivePro. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} DriveonAcademy. All rights reserved.</p>
         </div>
       </div>
     </footer>

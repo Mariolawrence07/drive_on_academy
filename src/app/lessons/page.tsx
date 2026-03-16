@@ -12,7 +12,7 @@ import { Check, ArrowRight, Sparkles, ShieldCheck, CreditCard } from "lucide-rea
 import { Link } from "react-router-dom"
 
 export const metadata = {
-  title: "Lessons & Prices | DrivePro",
+  title: "Lessons & Prices | DriveonAcademy",
   description:
     "View our driving lesson packages and pricing. Flexible options for all experience levels.",
 }
@@ -65,7 +65,7 @@ const lessonTypes = [
   {
     name: "Intensive Course",
     description: "Fast-track your learning with concentrated practice",
-    price: 700,
+    price: 760,
     duration: "20 hours",
     savings: 200,
     features: [
@@ -83,9 +83,9 @@ const lessonTypes = [
 const additionalServices = [
   {
     name: "Test Day Support",
-    price: 95,
+    price: 100,
     description:
-      "1.5-hour warm-up lesson before your test, plus use of vehicle for the test",
+      "2-hour warm-up lesson before your test, plus use of vehicle for the test",
   },
   {
     name: "Refresher Lesson",

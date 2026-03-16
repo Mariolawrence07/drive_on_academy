@@ -34,7 +34,7 @@ const features = [
 
 const testimonials = [
   {
-    name: "Sarah Mitchell",
+    name: "Lia ",
     text: "Passed my test first time! The instructor was incredibly patient and really helped build my confidence on the road. I couldn't have done it without this amazing support.",
     rating: 5,
     image: "https://res.cloudinary.com/dngovdyel/image/upload/v1773660319/634001004_847258695058368_6710790963915150777_n_iiymkg.jpg",
@@ -42,7 +42,7 @@ const testimonials = [
     attempts: "1st attempt",
   },
   {
-    name: "James Kennedy",
+    name: "Liam Parker",
     text: "Excellent instruction from day one. Very flexible with scheduling and always on time. The structured approach made learning so much easier. Highly recommend to everyone!",
     rating: 5,
     image: "https://res.cloudinary.com/dngovdyel/image/upload/v1773660112/641659543_859691063815131_8258770687518232405_n_udiuun.jpg",
@@ -50,7 +50,7 @@ const testimonials = [
     attempts: "1st attempt",
   },
   {
-    name: "Emily Roberts",
+    name: "Shreya",
     text: "I was so nervous about driving but the calm, reassuring approach made all the difference. Now I absolutely love being behind the wheel. Thank you for believing in me!",
     rating: 5,
     image: "https://res.cloudinary.com/dngovdyel/image/upload/v1773660112/637000013_849980754786162_718809772699305916_n_yqdkrp.jpg",

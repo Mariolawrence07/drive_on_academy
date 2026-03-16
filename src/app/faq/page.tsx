@@ -16,7 +16,7 @@ import {
 import { Link } from "react-router-dom"
 
 export const metadata = {
-  title: "FAQ | DrivePro",
+  title: "FAQ | DriveonAcademy",
   description:
     "Frequently asked questions about driving lessons, pricing, and what to expect.",
 }

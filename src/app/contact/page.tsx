@@ -13,9 +13,9 @@ import {
 import { Link } from "react-router-dom"
 
 export const metadata = {
-  title: "Contact | DrivePro",
+  title: "Contact | DriveonAcademy",
   description:
-    "Get in touch with DrivePro in Stoke-on-Trent. Call, email, WhatsApp, or book a lesson online.",
+    "Get in touch with DriveonAcademy in Stoke-on-Trent. Call, email, WhatsApp, or book a lesson online.",
 }
 
 const contactMethods = [
@@ -23,24 +23,24 @@ const contactMethods = [
     icon: Phone,
     title: "Phone",
     description: "Call directly to ask questions or discuss lesson options.",
-    value: "+44 7700 900123",
-    action: "tel:+447700900123",
+    value: "+447413501595",
+    action: "tel:+447413501595",
     actionLabel: "Call Now",
   },
   {
     icon: MessageSquare,
     title: "WhatsApp",
     description: "Send a quick message for availability or booking questions.",
-    value: "+44 7700 900123",
-    action: "https://wa.me/447700900123",
+    value: "+447413501595",
+    action: "https://wa.me/447413501595",
     actionLabel: "Message on WhatsApp",
   },
   {
     icon: Mail,
     title: "Email",
     description: "Best for detailed enquiries or general information.",
-    value: "hello@drivepro.co.uk",
-    action: "mailto:hello@drivepro.co.uk",
+    value: "Driveonacademy@gmail.com",
+    action: "mailto:Driveonacademy@gmail.com",
     actionLabel: "Send Email",
   },
 ]
@@ -91,7 +91,7 @@ export default function ContactPage() {
 
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Button asChild size="lg" className="h-12 px-6 text-base">
-                <a href="tel:+447700900123">
+                <a href="tel:+447413501595">
                   Call Now
                   <Phone className="ml-2 h-4 w-4" />
                 </a>
@@ -298,7 +298,7 @@ export default function ContactPage() {
                   className="h-12 border-white/20 bg-white/5 px-6 text-base text-primary-foreground hover:bg-white/10 hover:text-primary-foreground"
                 >
                   <a
-                    href="https://wa.me/447700900123"
+                    href="https://wa.me/447413501595"
                     target="_blank"
                     rel="noreferrer"
                   >

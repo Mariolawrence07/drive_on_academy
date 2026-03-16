@@ -11,7 +11,7 @@ import {
 } from "lucide-react"
 
 export const metadata = {
-  title: "Book a Lesson | DrivePro",
+  title: "Book a Lesson | DriveonAcademy",
   description:
     "Book your driving lesson online. Submit your request and the instructor will contact you to confirm.",
 }
@@ -34,6 +34,7 @@ const availability = [
   { day: "Saturday", hours: "8:00 AM - 5:00 PM" },
   { day: "Sunday", hours: "9:00 AM - 3:00 PM" },
 ]
+
 
 export default function BookPage() {
   return (
@@ -100,14 +101,14 @@ export default function BookPage() {
                     <div className="flex items-center gap-3 rounded-2xl border border-border/60 bg-background/60 px-4 py-3">
                       <Phone className="h-4 w-4 text-primary" />
                       <span className="text-sm text-muted-foreground">
-                        +44 7700 900123
+                       07413501595
                       </span>
                     </div>
 
                     <div className="flex items-center gap-3 rounded-2xl border border-border/60 bg-background/60 px-4 py-3">
                       <Mail className="h-4 w-4 text-primary" />
                       <span className="text-sm text-muted-foreground">
-                        hello@drivepro.co.uk
+                        Driveonacademy@gmail.com
                       </span>
                     </div>
                   </div>
