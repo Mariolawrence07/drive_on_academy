@@ -56,7 +56,7 @@ export default function AboutPage() {
             {/* Instructor img */}
             <div className="relative aspect-[5/5] w-full overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://res.cloudinary.com/dngovdyel/image/upload/v1773446240/lucid-origin_a_professional_driving_instructor_with_a_calm_and_patient_expression_wearing_a_c-0_raiavd.jpg"
+                src="https://res.cloudinary.com/dngovdyel/image/upload/v1773659239/352050783_927055355251983_4912591017705324709_n_smkz4o.jpg"
                 alt="Professional driving instructor"
                 className="object-cover"
               />

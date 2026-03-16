@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   CheckCircle2,
   Shield,
@@ -8,8 +8,8 @@ import {
   ArrowRight,
   Star,
   Quote,
-} from "lucide-react"
-import { Link } from "react-router"
+} from "lucide-react";
+import { Link } from "react-router";
 
 const features = [
   {
@@ -30,31 +30,40 @@ const features = [
     description:
       "A proven teaching approach designed to build confidence, skill, and test readiness.",
   },
-]
+];
 
 const testimonials = [
   {
-    name: "Sarah M.",
-    text: "Passed my test first time! The instructor was patient and really helped build my confidence on the road.",
+    name: "Sarah Mitchell",
+    text: "Passed my test first time! The instructor was incredibly patient and really helped build my confidence on the road. I couldn't have done it without this amazing support.",
     rating: 5,
+    image: "https://res.cloudinary.com/dngovdyel/image/upload/v1773660319/634001004_847258695058368_6710790963915150777_n_iiymkg.jpg",
+    passedDate: "March 2026",
+    attempts: "1st attempt",
   },
   {
-    name: "James K.",
-    text: "Excellent instruction. Very flexible with scheduling and always on time. Highly recommend!",
+    name: "James Kennedy",
+    text: "Excellent instruction from day one. Very flexible with scheduling and always on time. The structured approach made learning so much easier. Highly recommend to everyone!",
     rating: 5,
+    image: "https://res.cloudinary.com/dngovdyel/image/upload/v1773660112/641659543_859691063815131_8258770687518232405_n_udiuun.jpg",
+    passedDate: "February 2026",
+    attempts: "1st attempt",
   },
   {
-    name: "Emily R.",
-    text: "I was nervous about driving but the calm approach made all the difference. Now I love being behind the wheel!",
+    name: "Emily Roberts",
+    text: "I was so nervous about driving but the calm, reassuring approach made all the difference. Now I absolutely love being behind the wheel. Thank you for believing in me!",
     rating: 5,
+    image: "https://res.cloudinary.com/dngovdyel/image/upload/v1773660112/637000013_849980754786162_718809772699305916_n_yqdkrp.jpg",
+    passedDate: "January 2026",
+    attempts: "1st attempt",
   },
-]
+];
 
 const stats = [
   { label: "Students passed", value: "500+" },
   { label: "Years experience", value: "10+" },
   { label: "Average rating", value: "5.0" },
-]
+];
 
 export default function HomePage() {
   return (
@@ -81,8 +90,8 @@ export default function HomePage() {
 
               <p className="mt-6 max-w-xl text-pretty text-lg leading-8 text-muted-foreground sm:text-xl">
                 Professional driving instruction tailored to your pace. Whether
-                you're starting from scratch or refreshing your skills, we’ll help
-                you become a safe, confident, and test-ready driver.
+                you're starting from scratch or refreshing your skills, we’ll
+                help you become a safe, confident, and test-ready driver.
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -259,82 +268,122 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 sm:py-24">
+      {/* Testimonials Section */}
+      <section className="py-20 sm:py-28 bg-muted/20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <div className="inline-flex rounded-full border border-border/60 bg-muted/40 px-4 py-2 text-sm text-muted-foreground">
-              Real learner feedback
+            <div className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-background px-4 py-2 text-sm text-muted-foreground">
+              <CheckCircle2 className="h-4 w-4 text-accent" />
+              Real success stories
             </div>
-            <h2 className="mt-5 text-balance text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
-              What our students say
+            <h2 className="mt-6 text-balance text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
+              Students Who Passed With Us
             </h2>
-            <p className="mt-4 text-lg leading-8 text-muted-foreground">
-              Confidence on the road starts with the right support.
+            <p className="mt-4 text-lg text-muted-foreground">
+              Join hundreds of confident drivers who started their journey here.
             </p>
           </div>
 
-          <div className="mt-14 grid gap-6 lg:grid-cols-3">
+          <div className="mt-16 grid gap-8 lg:grid-cols-3">
             {testimonials.map((testimonial, index) => (
               <Card
                 key={index}
-                className="rounded-3xl border-border/60 bg-card/80 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                className="group overflow-hidden rounded-3xl border-border/60 bg-card shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
               >
-                <CardContent className="p-7">
-                  <div className="flex items-center justify-between">
-                    <div className="flex gap-1">
-                      {Array.from({ length: testimonial.rating }).map((_, i) => (
-                        <Star
-                          key={i}
-                          className="h-4 w-4 fill-accent text-accent"
-                        />
-                      ))}
+                {/* Student Image */}
+                <div className="relative aspect-[4/3] w-full overflow-hidden">
+                  <img
+                    src={testimonial.image}
+                    alt={`${testimonial.name} after passing their driving test`}
+                    className="object-contain transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="inline-flex items-center gap-1.5 rounded-full bg-accent px-3 py-1 text-xs font-medium text-accent-foreground">
+                      <CheckCircle2 className="h-3.5 w-3.5" />
+                      Passed {testimonial.attempts}
                     </div>
-                    <Quote className="h-5 w-5 text-muted-foreground/50" />
+                  </div>
+                </div>
+
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between">
+                    <div className="flex gap-0.5">
+                      {Array.from({ length: testimonial.rating }).map(
+                        (_, i) => (
+                          <Star
+                            key={i}
+                            className="h-4 w-4 fill-accent text-accent"
+                          />
+                        ),
+                      )}
+                    </div>
+                    <Quote className="h-5 w-5 text-muted-foreground/40" />
                   </div>
 
-                  <p className="mt-5 leading-7 text-muted-foreground">
-                    {testimonial.text}
+                  <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
+                    "{testimonial.text}"
                   </p>
 
-                  <div className="mt-6 flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-sm font-semibold text-primary">
-                      {testimonial.name.charAt(0)}
-                    </div>
+                  <div className="mt-6 flex items-center justify-between border-t border-border/60 pt-4">
                     <div>
-                      <p className="font-medium">{testimonial.name}</p>
+                      <p className="font-semibold">{testimonial.name}</p>
                       <p className="text-sm text-muted-foreground">
-                        Verified student
+                        Passed {testimonial.passedDate}
                       </p>
+                    </div>
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-sm font-bold text-primary">
+                      {testimonial.name.charAt(0)}
                     </div>
                   </div>
                 </CardContent>
               </Card>
             ))}
           </div>
+
+          {/* Social Proof Banner */}
+          <div className="mt-16 rounded-2xl bg-black/5 p-8 text-center">
+            <div className="flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-12">
+              <div>
+                <p className="text-4xl font-bold text-primary">500+</p>
+                <p className="text-sm text-muted-foreground">Students Passed</p>
+              </div>
+              <div className="hidden h-12 w-px bg-border sm:block" />
+              <div>
+                <p className="text-4xl font-bold text-primary">95%</p>
+                <p className="text-sm text-muted-foreground">Pass Rate</p>
+              </div>
+              <div className="hidden h-12 w-px bg-border sm:block" />
+              <div>
+                <p className="text-4xl font-bold text-primary">4.9</p>
+                <p className="text-sm text-muted-foreground">Average Rating</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Trust indicators */}
-      <section className="border-t border-border/60 bg-muted/20 py-10">
+      <section className="border-t border-border bg-muted/30 py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-4 md:grid-cols-3">
-            {[
-              "Fully Licensed & Insured",
-              "10+ Years Experience",
-              "500+ Students Passed",
-            ].map((item) => (
-              <div
-                key={item}
-                className="flex items-center justify-center gap-3 rounded-2xl border border-border/60 bg-card/70 px-4 py-4 text-center shadow-sm"
-              >
-                <CheckCircle2 className="h-5 w-5 text-accent" />
-                <span className="text-sm font-medium sm:text-base">{item}</span>
-              </div>
-            ))}
+          <div className="flex flex-wrap items-center justify-center gap-8 text-center sm:gap-16">
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="h-5 w-5 text-accent" />
+              <span className="text-sm font-medium">
+                Fully Licensed & Insured
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="h-5 w-5 text-accent" />
+              <span className="text-sm font-medium">10+ Years Experience</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="h-5 w-5 text-accent" />
+              <span className="text-sm font-medium">500+ Students Passed</span>
+            </div>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }
