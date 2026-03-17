@@ -32,15 +32,15 @@ const lessonTypes = [
 ]
 
 const areas = [
-  { value: "Hanley", label: "Hanley" },
-  { value: "Stoke", label: "Stoke" },
-  { value: "Longton", label: "Longton" },
-  { value: "Fenton", label: "Fenton" },
-  { value: "Burslem", label: "Burslem" },
-  { value: "Tunstall", label: "Tunstall" },
-  { value: "Trentham", label: "Trentham" },
-  { value: "Newcastle-under-Lyme", label: "Newcastle-under-Lyme" },
-]
+  { value: "Meir", label: "Meir" },
+  { value: "Meir Park", label: "Meir Park" },
+  { value: "Weston Coyney", label: "Weston Coyney" },
+  { value: "Blurton", label: "Blurton" },
+  { value: "Dresden", label: "Dresden" },
+  { value: "Normacot", label: "Normacot" },
+  { value: "Heron Cross", label: "Heron Cross" },
+  { value: "Blythe Bridge", label: "Blythe Bridge" },
+];
 
 const timeOptions = [
   { value: "Morning", label: "Morning" },

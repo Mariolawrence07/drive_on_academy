@@ -60,7 +60,7 @@ const testimonials = [
 ];
 
 const stats = [
-  { label: "Students passed", value: "500+" },
+  { label: "Students passed", value: "100+" },
   { label: "Years experience", value: "10+" },
   { label: "Average rating", value: "5.0" },
 ];

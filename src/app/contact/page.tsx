@@ -46,14 +46,14 @@ const contactMethods = [
 ]
 
 const serviceAreas = [
-  "Hanley",
-  "Newcastle-under-Lyme",
-  "Stoke",
-  "Longton",
-  "Fenton",
-  "Burslem",
-  "Tunstall",
-  "Trentham",
+  "Meir",
+  "Meir Park",
+  "Weston Coyney",
+  "Blurton",
+  "Dresden",
+  "Heron Cross",
+  "Blythe Bridge",
+  "Normacot",
 ]
 
 const lessonHours = [
