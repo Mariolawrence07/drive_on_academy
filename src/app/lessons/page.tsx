@@ -85,7 +85,7 @@ const additionalServices = [
     name: "Test Day Support",
     price: 100,
     description:
-      "2-hour warm-up lesson before your test, plus use of vehicle for the test",
+      "1-hour warm-up lesson before your test, plus 1 hour use of vehicle for the test",
   },
   {
     name: "Refresher Lesson",
