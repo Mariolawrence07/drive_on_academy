@@ -9,6 +9,7 @@ import BookPage from "./app/book/page"
 import ContactPage from "./app/contact/page"
 import FAQPage from "./app/faq/page"
 import { ScrollToTop } from "./components/scroll-to-top"
+import NotFound from "public/not-found"
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/book" element={<BookPage/>}></Route>
           <Route path="/contact" element={<ContactPage/>}></Route>
           <Route path="/faq" element={<FAQPage/>}></Route>
+          <Route path="*" element={<NotFound/>}></Route>
         </Routes>
 
         {/* <Toaster position="top-right" /> */}
