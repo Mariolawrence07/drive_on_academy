@@ -345,7 +345,7 @@ export default function HomePage() {
           <div className="mt-16 rounded-2xl bg-black/5 p-8 text-center">
             <div className="flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-12">
               <div>
-                <p className="text-4xl font-bold text-primary">500+</p>
+                <p className="text-4xl font-bold text-primary">100+</p>
                 <p className="text-sm text-muted-foreground">Students Passed</p>
               </div>
               <div className="hidden h-12 w-px bg-border sm:block" />
@@ -379,7 +379,7 @@ export default function HomePage() {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="h-5 w-5 text-accent" />
-              <span className="text-sm font-medium">500+ Students Passed</span>
+              <span className="text-sm font-medium"> 100+ Students Passed</span>
             </div>
           </div>
         </div>

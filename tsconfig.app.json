@@ -30,5 +30,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "public/not-found.tsx"]
+  "include": ["src", "src/not-found.tsx"]
 }
