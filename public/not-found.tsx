@@ -5,7 +5,7 @@ import { Link } from "react-router"
 
 export default function NotFound() {
   return (
-    <div className="flex min-h-[80vh] flex-col items-center justify-center px-4">
+    <div className="flex min-h-[80vh] flex-col items-center justify-center px-4 my-20">
       <div className="mx-auto max-w-md text-center">
         {/* 404 Number */}
         <div className="relative">
@@ -79,7 +79,7 @@ export default function NotFound() {
           Need help? Call us at{" "}
           <a href="tel:+1234567890" className="inline-flex items-center gap-1 font-medium text-primary hover:underline">
             <Phone className="h-3 w-3" />
-            (123) 456-7890
+            +44(0)7413501595
           </a>
         </p>
       </div>
