@@ -9,12 +9,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { Link } from "react-router";
-
-export const metadata = {
-  title: "About | DriveonAcademy",
-  description:
-    "Learn about our professional driving instructor and teaching philosophy.",
-};
+import { Helmet } from "react-helmet"; 
 
 const values = [
   {
@@ -103,6 +98,41 @@ const passedPupils = [
 
 export default function AboutPage() {
   return (
+    <>
+     <Helmet>
+        <title>About Driving Instructor | DriveOn Academy Stoke</title>
+
+        <meta
+          name="description"
+          content="Learn about our experienced driving instructor in Stoke-on-Trent. 10+ years experience, high pass rates, and patient teaching methods."
+        />
+
+        <meta
+          name="keywords"
+          content="driving instructor Stoke, about driving school Stoke, driving lessons Stoke-on-Trent instructor"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="About DriveOn Academy Driving Instructor"
+        />
+        <meta
+          property="og:description"
+          content="Experienced and patient driving instructor helping students pass with confidence."
+        />
+        <meta
+          property="og:url"
+          content="https://www.driveonacademy.co.uk/about"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Canonical */}
+        <link
+          rel="canonical"
+          href="https://www.driveonacademy.co.uk/about"
+        />
+      </Helmet>
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="bg-muted/30 py-16 sm:py-24">
@@ -325,5 +355,6 @@ export default function AboutPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }
