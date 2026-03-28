@@ -15,10 +15,13 @@ export default function GoogleReviews() {
     fetch("/api/google-reviews")
       .then((res) => res.json())
       .then((data) => {
-        setReviews(data.reviews);
-        setRating(data.rating);
-        setTotal(data.user_ratings_total);
-      });
+        console.log("Google Data:", data); // IMPORTANT for debugging
+
+        setReviews(data.reviews || []);
+        setRating(data.rating || 0);
+        setTotal(data.user_ratings_total || 0);
+      })
+      .catch((err) => console.error(err));
   }, []);
 
   return (
@@ -28,13 +31,17 @@ export default function GoogleReviews() {
         {rating} ⭐ ({total} reviews)
       </p>
 
-      {reviews.map((review, index) => (
-        <div key={index}>
-          <h4>{review.author_name}</h4>
-          <p>Rating: {review.rating} ⭐</p>
-          <p>{review.text}</p>
-        </div>
-      ))}
+      {reviews.length === 0 ? (
+        <p>No reviews yet</p>
+      ) : (
+        reviews.map((review, index) => (
+          <div key={index}>
+            <h4>{review.author_name}</h4>
+            <p>Rating: {review.rating} ⭐</p>
+            <p>{review.text}</p>
+          </div>
+        ))
+      )}
     </div>
   );
 }
