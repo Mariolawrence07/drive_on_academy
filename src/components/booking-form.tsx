@@ -1,35 +1,34 @@
-import { useState } from "react"
-import { useForm, ValidationError } from "@formspree/react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
+} from "@/components/ui/select";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { FieldGroup, Field, FieldLabel } from "@/components/ui/field"
-import { Spinner } from "@/components/ui/spinner"
-import { Send, CheckCircle2 } from "lucide-react"
+} from "@/components/ui/card";
+import { FieldGroup, Field, FieldLabel } from "@/components/ui/field";
+import { Spinner } from "@/components/ui/spinner";
+import { Send, CheckCircle2 } from "lucide-react";
 
-const FORMSPREE_FORM_ID =
-  import.meta.env.VITE_API_FORM_SPREE || "YOUR_FORM_ID"
+const FORMSPREE_FORM_ID = import.meta.env.VITE_API_FORM_SPREE || "YOUR_FORM_ID";
 
 const lessonTypes = [
   { value: "Single Lesson - £45", label: "Single Lesson — £45" },
   { value: "Starter Package - £200", label: "Starter Package — £200" },
   { value: "Standard Package - £380", label: "Standard Package — £380" },
   { value: "Intensive Course - £700", label: "Intensive Course — £700" },
-]
+];
 
 const areas = [
   { value: "Meir", label: "Meir" },
@@ -48,13 +47,13 @@ const timeOptions = [
   { value: "Evening", label: "Evening" },
   { value: "Weekend", label: "Weekend" },
   { value: "Flexible", label: "I’m flexible" },
-]
+];
 
 export function BookingForm() {
-  const [state, handleSubmit] = useForm(FORMSPREE_FORM_ID)
-  const [area, setArea] = useState("")
-  const [lessonType, setLessonType] = useState("")
-  const [preferredTime, setPreferredTime] = useState("")
+  const [state, handleSubmit] = useForm(FORMSPREE_FORM_ID);
+  const [area, setArea] = useState("");
+  const [lessonType, setLessonType] = useState("");
+  const [preferredTime, setPreferredTime] = useState("");
 
   if (state.succeeded) {
     return (
@@ -65,14 +64,15 @@ export function BookingForm() {
           </div>
           <h3 className="mt-6 text-2xl font-semibold">Request sent</h3>
           <p className="mt-4 max-w-md text-muted-foreground">
-            Thanks. We’ll contact you by phone or WhatsApp soon to confirm your lesson.
+            Thanks. We’ll contact you by phone or WhatsApp soon to confirm your
+            lesson.
           </p>
           <Button className="mt-8" onClick={() => window.location.reload()}>
             Send another request
           </Button>
         </CardContent>
       </Card>
-    )
+    );
   }
 
   return (
@@ -82,7 +82,8 @@ export function BookingForm() {
           Request a lesson
         </CardTitle>
         <CardDescription>
-          Fill in your details and we’ll contact you to confirm the date and time.
+          Fill in your details and we’ll contact you to confirm the date and
+          time.
         </CardDescription>
       </CardHeader>
 
@@ -117,6 +118,8 @@ export function BookingForm() {
                 type="tel"
                 required
                 placeholder="07XXXXXXXXX"
+                pattern="[0-9]+"
+                inputMode="numeric"
               />
               <ValidationError
                 prefix="Phone"
@@ -206,5 +209,5 @@ export function BookingForm() {
         </form>
       </CardContent>
     </Card>
-  )
+  );
 }

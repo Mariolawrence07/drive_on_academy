@@ -11,6 +11,7 @@ import {
   Quote,
 } from "lucide-react";
 import { Link } from "react-router";
+import GoogleReviews from "./components/GoogleReviews";
 
 const features = [
   {
@@ -98,6 +99,20 @@ export default function HomePage() {
           name="google-site-verification"
           content="PASTE_YOUR_GOOGLE_VERIFICATION_CODE_HERE"
         />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "DrivingSchool",
+            name: "DriveOn Academy",
+            url: "https://www.driveonacademy.co.uk",
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "25",
+            },
+          })}
+        </script>
       </Helmet>
       <div className="flex flex-col bg-background text-foreground ">
         {/* Hero */}
@@ -401,6 +416,45 @@ export default function HomePage() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Google Reviews Section */}
+        <section className="py-20 sm:py-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+                Google Reviews
+              </h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                See what our students say about learning with DriveOn Academy.
+              </p>
+            </div>
+
+            <div className="mt-12">
+              <GoogleReviews />
+            </div>
+
+            {/* Leave Review Buttons */}
+            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+              <a
+                href="https://g.page/r/CZI5uY5LtILEEBM/review"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="lg">Leave a Google Review</Button>
+              </a>
+
+              <a
+                href="https://www.facebook.com/profile.php?id=100093227358822&locale=en_GB#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="lg">
+                  Leave a Facebook Review
+                </Button>
+              </a>
             </div>
           </div>
         </section>
