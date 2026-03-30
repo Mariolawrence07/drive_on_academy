@@ -11,7 +11,7 @@ import {
   Quote,
 } from "lucide-react";
 import { Link } from "react-router";
-import GoogleReviews from "./components/GoogleReviews";
+// import GoogleReviews from "./components/GoogleReviews";
 
 const features = [
   {
@@ -393,6 +393,26 @@ export default function HomePage() {
                 </Card>
               ))}
             </div>
+            {/* Leave Review Buttons */}
+            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+              <a
+                href="https://g.page/r/CZI5uY5LtILEEBM/review"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="lg">Leave a Google Review</Button>
+              </a>
+
+              <a
+                href="https://www.facebook.com/profile.php?id=100093227358822&locale=en_GB#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="lg">
+                  Leave a Facebook Review
+                </Button>
+              </a>
+            </div>
 
             {/* Social Proof Banner */}
             <div className="mt-16 rounded-2xl bg-black/5 p-8 text-center">
@@ -421,7 +441,7 @@ export default function HomePage() {
         </section>
 
         {/* Google Reviews Section */}
-        <section className="py-20 sm:py-24">
+        {/* <section className="py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -437,7 +457,7 @@ export default function HomePage() {
             </div>
 
             {/* Leave Review Buttons */}
-            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+        {/* <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <a
                 href="https://g.page/r/CZI5uY5LtILEEBM/review"
                 target="_blank"
@@ -455,9 +475,9 @@ export default function HomePage() {
                   Leave a Facebook Review
                 </Button>
               </a>
-            </div>
-          </div>
-        </section>
+            </div> */}
+        {/* </div>
+        </section> */}
 
         {/* Trust indicators */}
         <section className="border-t border-border bg-muted/30 py-12">
